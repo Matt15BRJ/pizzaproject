@@ -28,7 +28,7 @@ function getOrder() {
     }
     tot1 = tot1+pizzaSize+"<br>";
     runningTotal = sizeTotal;
-   // getCrust(runningTotal, tot1, tot2);
+    getCrust(runningTotal, tot1, tot2);
 };
 
 function getCrust(runningTotal, tot1, tot2) {
