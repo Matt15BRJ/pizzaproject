@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatable" content="IE=edge">
+		<!--sets viewport for mobile devices-->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!--links to bootstrap css page-->
+		<link rel="stylesheet" href="css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="pizzamenu.css">	
+		<title>Panucci's Pizza</title>
+	</head>
+	<body>
+
+	<h1>Panucci's Pizza</h1>
+    <form id="pizzamenu"> 
+        <div class="menu"><!--pizza size selection-->
+            <h2>Pick a Size</h2>
+           
+                 <input class="size" name="size" type="radio" id="personal">
+                    Personal $6.00
+                <input class="size" name="size" type="radio" id="medium">
+                    Medium $10.00
+                <input class="size" name="size" type="radio" id="large" checked>
+                    Large $14.00
+                <input class="size" name="size" type="radio" id="extralarge">
+                    Extra Large $16.00
+             
+        </div>
+
+
+         <div class="menu"><!--pizza crust selection-->
+            <h2>Choose your Crust</h2>
+                <input class="crust" name="crust" type="radio" id="plain" checked>
+                    Plain Crust
+                <input class="crust" name="crust" type="radio" id="garlic">
+                    Garlic Butter Crust
+                <input class="crust" name="crust" type="radio" id="stuffed">
+                    Cheese Stuffed Crust (add $3.00)
+                <input class="crust" name="crust" type="radio" id="spicy">
+                    Spicy Crust
+                <input class="crust" name="crust" type="radio" id="house">
+                    House Special Crust 
+        </div>
+
+         <div class="menu"><!--pizza sauce selection-->
+             <h2>Choose your Sauce</h2>
+                <input class="sauce" name="sauce" type="radio" id="marinara" checked>
+                    Marinara Sauce
+                <input class="sauce" name="sauce" type="radio" id="whitesauce">
+                    White Sauce
+                <input class="sauce" name="sauce" type="radio" id="bbq">
+                    Barbeque Sauce
+                <input class="sauce" name="sauce" type="radio" id="nosauce">
+                    No Sauce
+        </div>
+
+         <div class="menu"><!--pizza sauce selection-->
+            <h2>Cheese</h2>
+                <input class="cheese" name="cheese" type="radio" id="regular" checked>
+                    Regular
+                <input class="cheese" name="cheese" type="radio" id="extracheese">
+                    Extra Cheese (add $3.00)
+                <input class="cheese" name="cheese" type="radio" id="nocheese">
+                    No Cheese
+        </div>  
+
+        <div class="menu"><!--pizza sauce selection-->
+            <h2>Choose your Meats</h2>
+            <h4>First meat is complementary. $1.00 for each additional meat.</h4>
+            <input class="meat" name="meat" type="checkbox" id="pepperoni">
+                    Pepperoni
+            <input class="meat" name="meat" type="checkbox" id="sausage">
+                    Sausage
+            <input class="meat" name="meat" type="checkbox" id="canadianbacon">
+                    Canadian Bacon
+            <input class="meat" name="meat" type="checkbox" id="groundbeef">
+                    Ground Beef
+            <input class="meat" name="options" type="checkbox" id="anchovy">
+                    Anchovy
+            <input class="meat" name="options" type="checkbox" id="chicken">
+                    Chicken
+        </div>      
+
+         <div class="menu"><!--pizza sauce selection-->
+            <h2>Choose your Veggies</h2>
+             <h4>First veggie is complementary. $1.00 for each additional veggie.</h4>
+            <input class="veggies" name="veggies" type="checkbox" id="tomatoes">
+                    Tomatoes
+            <input class="veggies" name="veggies" type="checkbox" id="onions">
+                    Onions
+            <input class="veggies" name="veggies" type="checkbox" id="olives">
+                    Olives
+            <input class="veggies" name="veggies" type="checkbox" id="greenpeppers">
+                    Green Peppers
+            <input class="veggies" name="veggies" type="checkbox" id="mushrooms">
+                    Mushrooms
+            <input class="veggies" name="veggies" type="checkbox" id="pineapple">
+                    Pineapple
+            <input class="veggies" name="veggies" type="checkbox" id="spinach">
+                    Spinach
+            <input class="veggies" name="veggies" type="checkbox" id="jalapeno">
+                    Jalapeno
+        </div>          
+    </form> 
+    <div class="controls">    
+        <button type="button" class="btn btn-default" onclick="getOrder()">
+            <p>Submit Order</p>
+        </button>
+        <button type="button" class="btn btn-default" onclick="clearAll()">
+            <p>Start Over</p>
+        </button>
+    </div><!--controls-->  
+        
+    <div id="orderreceipt">
+        <div id="custOrder">
+            <h4>Your Order:</h4> 
+        </div>
+        <div id="custSubTotal">
+            <h4>SubTotal:</h4>
+        </div>
+        <div id="orderItems"></div>
+        <div id="itemPrice"></div>
+        <div id="totalPrice">
+            <h4>Total Price:</h4>
+        </div>
+        <div id="total"></div>
+    </div><!--order receipt-->
+        
+     <!--links to jquery to run bootstrap-->
+	   <script src="js/jquery-3.1.1.min.js"></script>  
+           
+	   <!--links to bootstrap javascript to make things run-->
+	   <script src="js/bootstrap.min.js"></script>
+       <script src="pizzamenu.js"></script> 
+        
+           
+        
+        
+        
+
+	</body>
+</html>	
