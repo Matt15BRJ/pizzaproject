@@ -29,7 +29,7 @@ function getOrder() {
     tot1 = tot1+pizzaSize+"<br>";
     runningTotal = sizeTotal;
    // getCrust(runningTotal, tot1, tot2);
-/*};
+};
 
 function getCrust(runningTotal, tot1, tot2) {
     var crustTotal = 0;
@@ -135,7 +135,7 @@ function getVeggie(runningTotal,tot1,tot2) {
             tot2 = tot2 + 1 + "<br>";
             veggieCount = veggieCount - 1;
         }
-    }*/
+    }
     document.getElementById("orderreceipt").style.opacity=1;
 	document.getElementById("orderItems").innerHTML=tot1;
 	document.getElementById("itemPrice").innerHTML=tot2;
