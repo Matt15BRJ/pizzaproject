@@ -10,18 +10,21 @@ function getOrder() {
 	for (var i = 0; i < sizeArray.length; i++) {
 		if (sizeArray[i].checked) {
 			var pizzaSize = sizeArray[i].value;
-			tot1 = tot1+pizzaSize+"<br>";
+			tot1 = tot1 + pizzaSize+"<br>";
 		}
     
     if (pizzaSize === "personal") {
         sizeTotal = 6;
         tot2 = tot2+sizeTotal+"<br>";
+        break;
     } else if (pizzaSize === "medium") {
         sizeTotal = 10;
         tot2 = tot2+sizeTotal+"<br>";
+        break;
     } else if (pizzaSize === "large") {
         sizeTotal = 14;
         tot2 = tot2+sizeTotal+"<br>";
+        break;
     } else if (pizzaSize === "extralarge") {
         sizeTotal = 16;
         tot2 = tot2+sizeTotal+"<br>";
@@ -29,7 +32,6 @@ function getOrder() {
     }    
     runningTotal = sizeTotal;
     getCrust(runningTotal, tot1, tot2);
-    console.log(runningTotal);
 };
 
 function getCrust(runningTotal, tot1, tot2) {
@@ -75,6 +77,7 @@ function getCheese(runningTotal,tot1,tot2) {
     }
     tot2 = tot2 + cheeseTotal + "<br>";
     tot1 = tot1 + cheeseChoice + "<br>";
+    runningTotal = (runningTotal + cheeseTotal);
     getMeat(runningTotal,tot1,tot2);
 };
 
@@ -112,7 +115,7 @@ function getMeat(runningTotal,tot1,tot2) {
 function getVeggie(runningTotal,tot1,tot2) {
     var veggieTotal = 0;
     var veggieChoice = [];
-    var veggieArray = document.getElementsByClassName("veggie");
+    var veggieArray = document.getElementsByClassName("veggies");
     for (var j = 0; j < veggieArray.length; j++) {
        if (veggieArray[j].checked) {
             veggieChoice.push(veggieArray[j].value); 

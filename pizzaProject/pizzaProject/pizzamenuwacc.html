@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatable" content="IE=edge">
+		<!--sets viewport for mobile devices-->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!--links to bootstrap css page-->
+		<link rel="stylesheet" href="../css/bootstrap.min.css">
+        <link rel="stylesheet" href="pizzamenu.css">	
+		<title>Panucci's Pizza</title>
+	</head>
+	<body>
+    <header class="header">
+        <div class="text-vertical-center">
+            <h1>Panucci's Pizza</h1>
+        </div>
+        
+    </header>    
+	
+    <form id="pizzamenu"> 
+        <div class="panel-group" id="pizzaAccordian" role="tablist">
+            <div class="menu panel panel-danger"><!--pizza size selection-->   <div class="panel-heading" role="tab" id="sizeHeading">
+                    <h2 class="panel-title">
+                        <a href="#size1" role="button" data-toggle="collapse"  data-parent="#pizzaAccordian">
+                            Pick a Size</a>
+                    </h2>
+                </div><!--panel heading-->
+                <div class="panel-collapse collapse in" id="size1" role="tabpanel">
+                    <div class="panel-body">
+                         <input class="size" name="size" type="radio" value="personal">
+                            Personal $6.00
+                        <input class="size" name="size" type="radio" value="medium">
+                            Medium $10.00
+                        <input class="size" name="size" type="radio" value="large" checked>
+                            Large $14.00
+                        <input class="size" name="size" type="radio" value="extralarge">
+                            Extra Large $16.00
+                    </div><!--panel body-->    
+                </div><!--panel collapse-->
+            </div><!--panel-->
+
+
+             <div class="menu panel panel-danger"><!--pizza crust selection-->
+                <div class="panel-heading" role="tab" id="crustHeading">
+                    <h2 class="panel-title">
+                        <a href="#crust1" role="button" data-toggle="collapse"  data-parent="#pizzaAccordian">
+                            Choose your Crust</a>
+                    </h2>
+                 </div><!--panel heading--> 
+                 <div class="panel-collapse collapse" id="crust1" role="tabpanel">
+                    <div class="panel-body">
+                        <input class="crust" name="crust" type="radio" value="plain" checked>
+                            Plain Crust
+                        <input class="crust" name="crust" type="radio" value="garlic">
+                            Garlic Butter Crust
+                        <input class="crust" name="crust" type="radio" value="stuffed">
+                            Cheese Stuffed Crust (add $3.00)
+                        <input class="crust" name="crust" type="radio" value="spicy">
+                            Spicy Crust
+                        <input class="crust" name="crust" type="radio" value="house">
+                            House Special Crust 
+                    </div><!--panel body-->         
+                 </div><!--panel collapse-->     
+            </div><!--panel-->
+
+             <div class="menu panel panel-danger"><!--pizza sauce selection-->
+                 <div class="panel-heading" role="tab" id="sauceHeading">
+                    <h2 class="panel-title">
+                        <a href="#sauce1" role="button" data-toggle="collapse"  data-parent="#pizzaAccordian">
+                            Choose your Sauce</a>
+                    </h2>
+                 </div><!--panel heading-->
+                 <div class="panel-collapse collapse" id="sauce1" role="tabpanel">
+                    <div class="panel-body">
+                        <input class="sauce" name="sauce" type="radio" value="marinara" checked>
+                            Marinara Sauce
+                        <input class="sauce" name="sauce" type="radio" value="whitesauce">
+                            White Sauce
+                        <input class="sauce" name="sauce" type="radio" value="bbq">
+                            Barbeque Sauce
+                        <input class="sauce" name="sauce" type="radio" value="nosauce">
+                        No Sauce
+                    </div><!--panel body-->
+                 </div><!--panel collapse-->
+            </div><!--panel-->
+
+             <div class="menu panel panel-danger"><!--pizza sauce selection-->
+                <div class="panel-heading" role="tab" id="cheeseHeading"> 
+                    <h2 class="panel-title">
+                        <a href="#cheese1" role="button" data-toggle="collapse"  data-parent="#pizzaAccordian">
+                        Cheese</a>
+                    </h2>
+                 </div><!--panel heading-->
+                 <div class="panel-collapse collapse" id="cheese1" role="tabpanel">
+                    <div class="panel-body">
+                        <input class="cheese" name="cheese" type="radio" value="regular" checked>
+                            Regular
+                        <input class="cheese" name="cheese" type="radio" value="extracheese">
+                            Extra Cheese (add $3.00)
+                        <input class="cheese" name="cheese" type="radio" value="nocheese">
+                            No Cheese
+                     </div><!--panel body-->
+                 </div><!--panel collapse-->    
+            </div><!--panel-->  
+
+            <div class="menu panel panel-danger"><!--pizza sauce selection-->
+                <div class="panel-heading" role="tab" id="meatHeading">
+                    <h2 class="panel-title">
+                        <a href="#meat1" role="button" data-toggle="collapse"  data-parent="#pizzaAccordian">
+                            Choose your Meats</a>
+                    </h2>
+                </div><!--panel heading-->
+                <div class="panel-collapse collapse" id="meat1" role="tabpanel">
+                    <div class="panel-body">
+                        <h4>First meat is complementary. $1.00 for each additional meat.</h4>
+                        <input class="meat" name="meat" type="checkbox" value="pepperoni">
+                                Pepperoni
+                        <input class="meat" name="meat" type="checkbox" value="sausage">
+                                Sausage
+                        <input class="meat" name="meat" type="checkbox" value="canadianbacon">
+                                Canadian Bacon
+                        <input class="meat" name="meat" type="checkbox" value="groundbeef">
+                                Ground Beef
+                        <input class="meat" name="options" type="checkbox" value="anchovy">
+                                Anchovy
+                        <input class="meat" name="options" type="checkbox" value="chicken">
+                                Chicken
+                    </div><!--panel body-->
+                </div><!--panel collapse-->
+            </div><!--panel-->      
+
+             <div class="menu panel panel-danger"><!--pizza sauce selection-->
+                <div class="panel-heading" role="tab" id="veggieHeading">
+                    <h2 class="panel-title">
+                        <a href="#veggie1" role="button" data-toggle="collapse"  data-parent="#pizzaAccordian">
+                            Choose your Veggies</a>
+                    </h2>
+                 </div><!--panel heading-->
+                 <div class="panel-collapse collapse" id="veggie1" role="tabpanel">
+                    <div class="panel-body">
+                        <h4>First veggie is complementary. $1.00 for each additional veggie.</h4>
+                        <input class="veggies" name="veggies" type="checkbox" value="tomatoes">
+                                Tomatoes
+                        <input class="veggies" name="veggies" type="checkbox" value="onions">
+                                Onions
+                        <input class="veggies" name="veggies" type="checkbox" value="olives">
+                                Olives
+                        <input class="veggies" name="veggies" type="checkbox" value="greenpeppers">
+                                Green Peppers
+                        <input class="veggies" name="veggies" type="checkbox" value="mushrooms">
+                                Mushrooms
+                        <input class="veggies" name="veggies" type="checkbox" value="pineapple">
+                                Pineapple
+                        <input class="veggies" name="veggies" type="checkbox" value="spinach">
+                                Spinach
+                        <input class="veggies" name="veggies" type="checkbox" value="jalapeno">
+                                Jalapeno
+                     </div><!--panel body-->
+                 </div><!--panel collapse-->
+            </div><!--panel--> 
+        </div><!--panel group-->    
+    </form> 
+        
+    <div class="controls">    
+        <button type="button" class="btn btn-warning" onclick="getOrder()">
+            <p>Submit Order</p>
+        </button>
+        <button type="button" class="btn btn-warning" onclick="clearAll()">
+            <p>Start Over</p>
+        </button>
+    </div><!--controls-->  
+    
+  
+    
+  <!--customer receipt-->      
+    <table class="table table-bordered" id="orderreceipt">
+        <thead>
+            <tr>
+                <th>You Chose:</th>
+                <th id="custSubTotal">Subtotal:</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row" id="orderItems"></th>
+                <td id="itemPrice"></td>
+            </tr>
+            <tr>
+                <th scope="row">Total Price:</th>
+                <td id="total"></td>
+            </tr>
+        </tbody>  
+    </table>
+    
+        
+     <!--links to jquery to run bootstrap-->
+	   <script src="js/jquery-3.1.1.min.js"></script>  
+           
+	   <!--links to bootstrap javascript to make things run-->
+	   <script src="js/bootstrap.min.js"></script>
+       <script src="pizzamenu.js"></script> 
+        
+           
+        
+        
+        
+
+	</body>
+</html>	
